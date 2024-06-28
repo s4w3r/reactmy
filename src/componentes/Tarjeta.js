@@ -3,7 +3,7 @@ import "./CSS/stilo.css";
 
 
 
-const Card = ({title, descripcion,img})=>(
+const Tarjeta = ({title, descripcion,img})=>(
     <div className="todo">
             
         <div className="contenido">
@@ -41,4 +41,4 @@ const Card = ({title, descripcion,img})=>(
 
 }
  */
-export default Card
+export default Tarjeta

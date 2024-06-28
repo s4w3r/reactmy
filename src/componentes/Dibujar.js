@@ -1,6 +1,6 @@
 import React from "react";
-import Formulario from "./formulario";
-import Card from "./Card";
+import Formu from "./formulario";
+import Tarjeta from "./Tarjeta";
 
 
 const Dibujar =({form,onChange,onSubmit})=>{

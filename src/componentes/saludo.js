@@ -1,7 +1,7 @@
 import React from "react";
 import "./CSS/stilo.css";
 
-const Hola = ({username})=>(
+const Hi = ({username})=>(
     <React.Fragment>
         <h1 className="jas">
             Hola a todos soy: {username}
@@ -9,4 +9,4 @@ const Hola = ({username})=>(
     </React.Fragment>
 )
 
-export default Hola
+export default Hi

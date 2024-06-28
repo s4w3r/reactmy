@@ -1,12 +1,12 @@
 import React from "react";
-import Card from "./Card";
+import Tarjeta from "./Tarjeta";
 
 const Iterador = ({chao})=>(
     <React.Fragment>
         {
             chao.map((chao)=>{
                 return(
-                    <Card
+                    <Tarjeta
                         key={chao.id_b}
                         {...chao}
                     />

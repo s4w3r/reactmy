@@ -15,19 +15,19 @@ root.render(
 
 
 /* const user = {
-  nombre : 'johan',
-  apellido: 'Fetecua',
-  edad: 19,
-  avatar:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNG7BjVu8_Xq0YWZSvz1DRlYm9V9VmNE-OaN05uXG4bQ&s'
+  Nombre : 'Julian',
+  Apellido: 'Rey',
+  Edad: 20,
+  Avatar:'https://i.pinimg.com/236x/e0/05/a9/e005a9f9675ab2a1961d76ff073546af.jpg'
 }
 
 function datouser(){
-  return user.nombre +""+ user.apellido +""+ user.edad
+  return user.Nombre +""+ user.Apellido +""+ user.Edad
 }
 
 const element = (
 <div>
-  <h1>hola,{datouser(user.nombre)}</h1>
-  <img src={user.avatar}/>
+  <h1>hola,{datouser(user.Nombre)}</h1>
+  <img src={user.Avatar}/>
 </div>
 ) */

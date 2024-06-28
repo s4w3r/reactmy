@@ -5,15 +5,15 @@ const Formulario = ({onChange,formu,onSubmit}) =>(
                 <form onSubmit={onSubmit}>
                     <React.Fragment>
                         <label>Nombre:</label>
-                        <input type="text" name="title" placeholder="Nombre aqui!!" onChange={onChange} value={formu.title}/>
+                        <input type="text" name="title" placeholder="Nombre" onChange={onChange} value={formu.title}/>
                     </React.Fragment>
                     <React.Fragment>
                         <label>Descripcion:</label>
-                        <input type="text" name="descripcion" placeholder="Descipcion aqui!!" onChange={onChange} value={formu.descripcion}/>
+                        <input type="text" name="descripcion" placeholder="Descipcion" onChange={onChange} value={formu.descripcion}/>
                     </React.Fragment>
                     <React.Fragment>
                         <label>Url de la imagen:</label>
-                        <input type="text" name="img" placeholder="Imagen aqui!!" onChange={onChange} value={formu.img}/>
+                        <input type="text" name="img" placeholder="Imagen" onChange={onChange} value={formu.img}/>
                     </React.Fragment>
                     <button type="submit">Enviar</button>
                 </form>
@@ -29,15 +29,15 @@ const Formulario = ({onChange,formu,onSubmit}) =>(
                 <form onSubmit={onSubmit}>
                     <React.Fragment>
                         <label>Nombre:</label>
-                        <input type="text" name="title" placeholder="Nombre aqui!!" onChange={onChange} value={formu.title}/>
+                        <input type="text" name="title" placeholder="Nombre" onChange={onChange} value={formu.title}/>
                     </React.Fragment>
                     <React.Fragment>
                         <label>Descripcion:</label>
-                        <input type="text" name="descripcion" placeholder="Descipcion aqui!!" onChange={onChange} value={formu.descripcion}/>
+                        <input type="text" name="descripcion" placeholder="Descipcion" onChange={onChange} value={formu.descripcion}/>
                     </React.Fragment>
                     <React.Fragment>
                         <label>Url de la imagen:</label>
-                        <input type="text" name="img" placeholder="Imagen aqui!!" onChange={onChange} value={formu.img}/>
+                        <input type="text" name="img" placeholder="Imagen" onChange={onChange} value={formu.img}/>
                     </React.Fragment>
                     <button type="submit">Enviar</button>
                 </form>

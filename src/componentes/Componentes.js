@@ -1,11 +1,11 @@
 import React from "react";
-import Hola from "../componentes/saludo"
+import Hi from "./Saludo"
 import Iterador from "../componentes/iterante"
 import Boton from "../componentes/boton";
 
 const Componentes=()=>{
     <React.Fragment>
-    <Hola
+    <Hi
     username = "Juli"
     />
     <Iterador
