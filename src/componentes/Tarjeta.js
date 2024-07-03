@@ -3,21 +3,21 @@ import "./CSS/stilo.css";
 
 
 
-const Tarjeta = ({title, descripcion,img})=>(
-    <div className="todo">
-            
-        <div className="contenido">
-            <div className="font">
-                <h1>Hola {title}</h1>
-                <p>{descripcion}</p>
-            </div>
-            <div>
-                <img src={img} className="logo" alt=""/>
+const Tarjeta = ({title, descripcion,img})=>{
+    return (
+        <div className="todo">
+            <div className="contenido">
+                <div className="font">
+                    <h1>Hola {title}</h1>
+                    <p>{descripcion}</p>
+                </div>
+                <div>
+                    <img src={img} className="logo" alt="Imagen" />
+                </div>
             </div>
         </div>
-
-    </div>
-)
+    );
+};
 
 /* class Card extends React.Component{
     render(){

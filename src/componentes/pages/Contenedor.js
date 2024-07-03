@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import "../CSS/stilo.css";
 import Dibujar from "../Dibujar";
 
-const Contenedor=()=>{
-const [data,setData] = useState()
-}
-/* class Contenedor extends React.Component{
+/* const Contenedor=()=>{
+const [data,setData] = useState() */
+
+export default class Contenedor extends React.Component{
     state={
         formu:{
             title:'',
@@ -21,8 +22,10 @@ const [data,setData] = useState()
             }
         })
     }
+    
     handleSubmit= async e=>{
         e.preventDefault()
+        this.props.navigate('/Contenedor')
         try{
             let config ={
                 method:'POST',
@@ -35,7 +38,6 @@ const [data,setData] = useState()
             let res = await fetch('http://localhost:8000/api/info',config)
             let json = await res.json()
             console.log(json)
-            this.props.navigate('/Lista')
         }
 
         catch(error){
@@ -46,11 +48,11 @@ const [data,setData] = useState()
     
    render(){
     return <Dibujar
-            form={this.state.form}
+            formu={this.state.formu}
             onChange={this.handleChange}
             onSubmit={this.handleSubmit}
             />
    }
 
-} */
-export default Contenedor
+} 
+/* export default Contenedor */

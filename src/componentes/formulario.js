@@ -20,6 +20,8 @@ const Formulario = ({onChange,formu,onSubmit}) =>(
             </React.Fragment>
 )
 
+export default Formulario
+
 /* export default class Formulario extends React.Component{
 
     render(){

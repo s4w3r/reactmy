@@ -1,13 +1,17 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Componentes from "../Componentes";
 import useFetch from "../../Hook/hook";
+import url from "../../config"
 
 const ContenedorComponentes=()=>{
-    const {data} = useFetch(`${url}/info`)
+    const {data,loading} = useFetch(`${url}/info`)
     return <Componentes
             data={data}
+            loading={loading}
             />
 }
+
+export default ContenedorComponentes
 /* class ContenedorComponentes extends React.Component{
         state = {
             data:[
@@ -32,4 +36,3 @@ const ContenedorComponentes=()=>{
                 />
     }
 } */
-export default ContenedorComponentes

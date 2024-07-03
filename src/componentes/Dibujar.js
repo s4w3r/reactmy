@@ -1,22 +1,18 @@
 import React from "react";
-import Formu from "./formulario";
-import Tarjeta from "./Tarjeta";
+import Formulario from "../componentes/formulario"
+import Tarjeta from "../componentes/Tarjeta";
 
 
-const Dibujar =({form,onChange,onSubmit})=>{
-<div className="row">
-    <div className="col-sm">
+const Dibujar =({formu,onChange,onSubmit})=>
+(<React.Fragment>
         <Tarjeta
-        {...form}
+            {...formu}
         />
-    </div>
-    <div className="col-sm">
-        <Formu
-            onSubmit={onSubmit}
-            onChange={onChange}
-            form={form}
+        <Formulario
+            onSubmit= {onSubmit}
+            onChange = {onChange}
+            formu={formu}
         />
-    </div>
-</div>
-}
+    </React.Fragment>)
+
 export default Dibujar
